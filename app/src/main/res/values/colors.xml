@@ -1,0 +1,9 @@
+<resources>
+    <color name="colorPrimary">#CCCCCC</color> <!-- Off-white instead of Gold -->
+    <color name="colorPrimaryDark">#AAAAAA</color> <!-- Darker off-white instead of Dark Gold -->
+    <color name="colorAccent">#CCCCCC</color> <!-- Off-white instead of Gold -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#000000</color>
+    <color name="red">#FF4444</color>
+</resources> 

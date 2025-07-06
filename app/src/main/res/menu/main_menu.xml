@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_settings" android:title="@string/action_settings" android:icon="@android:drawable/ic_menu_preferences" android:showAsAction="always" />
+    <item android:id="@+id/action_reload" android:title="@string/action_reload" android:icon="@android:drawable/ic_menu_rotate" android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_back" android:title="@string/action_back" android:icon="@android:drawable/ic_media_previous" android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_forward" android:title="@string/action_forward" android:icon="@android:drawable/ic_media_next" android:showAsAction="ifRoom" />
+    <item android:id="@+id/action_open_external" android:title="@string/action_open_external" android:showAsAction="never" />
+</menu> 

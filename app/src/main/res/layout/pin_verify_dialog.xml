@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:importantForAutofill="no">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Security PIN"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter your PIN to access credential management"
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <!-- PIN Boxes as EditTexts -->
+    <LinearLayout
+        android:id="@+id/pin_boxes_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:importantForAutofill="no">
+
+        <EditText
+            android:id="@+id/pin_digit_1"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAutofill="no"
+            android:focusable="true"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pin_digit_2"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAutofill="no"
+            android:focusable="true"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pin_digit_3"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAutofill="no"
+            android:focusable="true"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pin_digit_4"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAutofill="no"
+            android:focusable="true"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pin_digit_5"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:maxLength="1"
+            android:imeOptions="actionNext"
+            android:padding="0dp"
+            android:layout_marginEnd="8dp"
+            android:importantForAutofill="no"
+            android:focusable="true"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/pin_digit_6"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:maxLength="1"
+            android:imeOptions="actionDone"
+            android:padding="0dp"
+            android:importantForAutofill="no"
+            android:focusable="true"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Incorrect PIN. Please try again."
+        android:textColor="#FFFF0000"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+</LinearLayout> 

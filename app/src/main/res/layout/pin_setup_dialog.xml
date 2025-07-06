@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="@color/background"
+    android:gravity="center_horizontal"
+    android:minWidth="320dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Security PIN"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create a 6-digit PIN to secure your saved credentials. You'll only need to enter this PIN when managing credentials, not when logging into sites. You can choose 'No' if you prefer not to use a PIN."
+        android:textColor="#CCCCCC"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:textSize="14sp" />
+
+    <!-- Hidden EditText for actual PIN input -->
+    <EditText
+        android:id="@+id/pin_input"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:importantForAccessibility="no"
+        android:visibility="invisible" />
+
+    <!-- Hidden EditText for PIN confirmation -->
+    <EditText
+        android:id="@+id/confirm_pin_input"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:inputType="numberPassword"
+        android:maxLength="6"
+        android:background="@android:color/transparent"
+        android:textColor="@android:color/transparent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:importantForAccessibility="no"
+        android:visibility="invisible" />
+
+    <!-- First PIN Entry Section -->
+    <TextView
+        android:id="@+id/pin_label_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter PIN"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/pin_boxes_container_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:paddingHorizontal="16dp">
+
+        <!-- PIN Box 1 -->
+        <EditText
+            android:id="@+id/pin1_digit_1"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 2 -->
+        <EditText
+            android:id="@+id/pin1_digit_2"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 3 -->
+        <EditText
+            android:id="@+id/pin1_digit_3"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 4 -->
+        <EditText
+            android:id="@+id/pin1_digit_4"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 5 -->
+        <EditText
+            android:id="@+id/pin1_digit_5"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 6 -->
+        <EditText
+            android:id="@+id/pin1_digit_6"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+    </LinearLayout>
+
+    <!-- Second PIN Entry Section -->
+    <TextView
+        android:id="@+id/pin_label_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm PIN"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/pin_boxes_container_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"
+        android:paddingHorizontal="16dp"
+        android:visibility="gone">
+
+        <!-- PIN Box 1 -->
+        <EditText
+            android:id="@+id/pin2_digit_1"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 2 -->
+        <EditText
+            android:id="@+id/pin2_digit_2"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 3 -->
+        <EditText
+            android:id="@+id/pin2_digit_3"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 4 -->
+        <EditText
+            android:id="@+id/pin2_digit_4"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 5 -->
+        <EditText
+            android:id="@+id/pin2_digit_5"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+        <!-- PIN Box 6 -->
+        <EditText
+            android:id="@+id/pin2_digit_6"
+            android:layout_width="40dp"
+            android:layout_height="48dp"
+            android:background="@drawable/pin_box_empty"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:padding="0dp" />
+
+    </LinearLayout>
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PIN must be exactly 6 digits and both entries must match."
+        android:textColor="#FFFF0000"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1.2"
+            android:text="No, Thank you"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

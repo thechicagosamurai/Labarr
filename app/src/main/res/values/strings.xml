@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Labarr</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_reload">Reload</string>
+    <string name="action_back">Back</string>
+    <string name="action_forward">Forward</string>
+    <string name="action_open_external">Open in Browser</string>
+    <string name="prompt_enter_ip">Enter Homelab IP Address</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+</resources> 

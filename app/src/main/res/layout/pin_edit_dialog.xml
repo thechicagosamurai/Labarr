@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Security PIN"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change your PIN or remove PIN protection entirely"
+        android:textColor="@color/white"
+        android:layout_marginBottom="24dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/current_pin_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current PIN"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/new_pin_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New PIN (leave blank to remove PIN)"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:maxLength="6" />
+
+    <EditText
+        android:id="@+id/confirm_new_pin_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm New PIN"
+        android:inputType="numberPassword"
+        android:textColor="@color/white"
+        android:textColorHint="#80FFFFFF"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:maxLength="6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Update"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

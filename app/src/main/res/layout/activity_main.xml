@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Placeholder for WebView - will be dynamically added after PIN verification -->
+    <FrameLayout
+        android:id="@+id/webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Transparent trigger bar on left edge -->
+    <View
+        android:id="@+id/trigger_bar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/transparent" />
+
+    <!-- Visual feedback line that follows the drag -->
+    <View
+        android:id="@+id/drag_feedback_line"
+        android:layout_width="4dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="8dp"
+        android:background="#80000000"
+        android:visibility="gone"
+        android:translationX="-4dp" />
+
+    <!-- Sliding menu panel -->
+    <LinearLayout
+        android:id="@+id/slide_menu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="20dp"
+        android:background="@drawable/slide_menu_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:translationX="-120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/menu_home"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_home"
+                android:background="@drawable/menu_button_lined_circle"
+                android:tint="@color/white"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Home" />
+
+            <ImageButton
+                android:id="@+id/menu_reload"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_reload"
+                android:background="@drawable/menu_button_lined_circle"
+                android:tint="@color/white"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Reload" />
+
+            <ImageButton
+                android:id="@+id/menu_forward"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_forward"
+                android:background="@drawable/menu_button_lined_circle"
+                android:tint="@color/white"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Forward" />
+
+            <ImageButton
+                android:id="@+id/menu_desktop_toggle"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_monitor"
+                android:background="@drawable/menu_button_lined_circle"
+                android:tint="@color/white"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Toggle Desktop View" />
+
+            <ImageButton
+                android:id="@+id/menu_settings"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_settings"
+                android:background="@drawable/menu_button_lined_circle"
+                android:tint="@color/white"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Settings" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:background="@drawable/transparent_back_button"
+        android:src="@android:drawable/ic_media_previous"
+        android:tint="@color/white"
+        android:alpha="0.7"
+        android:contentDescription="Back" />
+
+
+
+    <!-- Dark gray screen with settings button when no URLs -->
+    <LinearLayout
+        android:id="@+id/no_urls_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF333333"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</FrameLayout> 

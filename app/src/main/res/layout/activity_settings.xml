@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/settings_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="32dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Homelab IP Address (Trusted WiFi Only)"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/ip_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="192.168.1.100"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#80FFFFFF"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+                    <Button
+            android:id="@+id/save_ip_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/delete_ip_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trusted WiFi Network Name (SSID)"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/wifi_ssid_enabled_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable WiFi SSID Check (Use IP only on specific WiFi)"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/trusted_wifi_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MyHomeWiFi"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="#80FFFFFF"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/wifi_ssid_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/save_wifi_ssid_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:background="@drawable/rounded_button_background"
+                android:textColor="@color/black"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/delete_wifi_ssid_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:background="@drawable/rounded_button_background"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fallback URL (All Other Networks)"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/fallback_url_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="https://your-domain.com"
+            android:inputType="textUri"
+            android:textColor="@color/white"
+            android:textColorHint="#80FFFFFF"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                android:id="@+id/save_fallback_url_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:background="@drawable/rounded_button_background"
+                android:textColor="@color/black"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/delete_fallback_url_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:background="@drawable/rounded_button_background"
+                android:textColor="@color/black"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/manage_credentials_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Logins"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/clear_cache_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear Cache and Cookies"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+
+
+        <Button
+            android:id="@+id/backup_restore_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backup &amp; Restore"
+            android:background="@drawable/rounded_button_background"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/vibration_enabled_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Vibration Feedback"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/auto_rotate_enabled_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Auto-Rotate"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/show_back_button_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show Back Button"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/enable_automatic_login_system_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enable Auto Login System"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <CheckBox
+            android:id="@+id/auto_fill_credentials_checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Auto Fill Saved Credentials"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/wipe_data_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wipe All Data"
+            android:background="@drawable/red_button_background"
+            android:textColor="@color/white"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+
+</ScrollView> 
