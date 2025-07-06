@@ -12,7 +12,7 @@ A powerful Android application designed specifically for homelab enthusiasts to 
 - **PIN Protection**: Secure your credentials with a customizable PIN
 - **Encrypted Storage**: All sensitive data is encrypted using Android Keystore
 - **Session Management**: PIN verification persists during app sessions
-- **Secure Credential Manager**: Military-grade encryption for stored credentials
+- **Secure Credential Manager**: Encryption for stored credentials
 
 ### 🏠 **Homelab Integration**
 - **Dual URL Support**: Configure both local IP and fallback domain URLs
@@ -57,12 +57,6 @@ A powerful Android application designed specifically for homelab enthusiasts to 
 - Android 7.0 (API level 24) or higher
 - Internet connection for remote access
 - Local network access for homelab services
-
-### Installation
-1. Download the latest APK from releases
-2. Enable "Install from Unknown Sources" in Android settings
-3. Install the APK file
-4. Launch Labarr and configure your homelab settings
 
 ### Initial Setup
 1. **Configure URLs**: Add your homelab IP address and fallback domain
